@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    scroll-behavior:smooth;
+    
+}
+body{
+    background-color: black;
+
+}
+nav{
+    padding: 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+
+.left{
+    width: 50%;
+    font-size: 1.5rem;
+
+}
+.right{
+    width: 9%;
+}
+
+nav a{
+    
+    text-decoration:none;
+}
+
+nav a:hover{
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#show{
+   
+    text-align: center;
+    max-height: 480px;
+    overflow: hidden;
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    transition: max-height 1s;
+}
+#show.open{
+    max-height: 100%;
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    transition: max-height 1s;
+}
+#show h1{
+    font-size: 5rem;
+}
+.purple{
+    color:rgb(141, 7, 110) ;
+}
+#show .pic img{
+    margin-top: 80px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+#expand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#expand a{
+    margin-top: 50px;
+    color: white;    
+    text-decoration: none;
+}
+#expand a:hover{
+    font-size: 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.hidden{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.vector img{
+    width: 550px;
+    height:550px;
+}
+
+.box{
+    background-color:rgb(100, 4, 77) ;
+    height: 450px;
+    margin: -15px;
+}
+
+.text{
+   padding: 4%;
+}
+
+.card{
+    margin: -100px 0 100px;
+    padding: 20px;
+    background-color: black;
+    border:1px solid rgb(28, 28, 28);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 20px;
+    width: 50%;
+    line-height: 40px;
+   
+}
+
+.card li{
+    list-style: none;
+}
+
+
+footer{
+    background-color:rgb(100, 4, 77) ;
+    width: 100%;
+}
+
+.social{
+    position:static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+}
+
+.social img{
+    width: 40px;
+    height: 40px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
